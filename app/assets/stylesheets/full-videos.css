@@ -60,16 +60,6 @@
   margin-left: auto;
 }
 
-.header-image {
-    display: block;
-    width: 100%;
-    text-align: center;
-    background: url('http://placehold.it/1900x500') no-repeat center center scroll;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-}
 /*	background: url("Coliseum.jpg") no-repeat center center fixed;
 	-webkit-background-size: cover;
   -moz-background-size: cover;
@@ -77,6 +67,9 @@
   -o-background-size: cover;
 }*/
 
+.container3 {
+	background-color: rgb(26, 26, 26);
+}
 .header-unit {
 	height: 100%;
 	position: relative;
