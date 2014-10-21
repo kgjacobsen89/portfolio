@@ -67,10 +67,11 @@
   -o-background-size: cover;
 }*/
 
-/*.container3 {
+.container3 {
+	background-color: rgb(26, 26, 26);
 	height: 100%;
 	width: 100%;
-}*/
+}
 
 .header-unit {
 	height: 100%;
