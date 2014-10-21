@@ -33,6 +33,8 @@ gem 'spring',        group: :development
 
 # Use unicorn as the app server
 # gem 'unicorn'
+gem 'mail_form'
+gem 'simple_form'
 
 gem 'rails_12factor', group: :production
 
