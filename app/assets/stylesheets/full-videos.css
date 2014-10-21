@@ -24,24 +24,45 @@
   -o-background-size: cover;
 }
 
-#videobcg {
+.header-unit {
+	height: 100%;
+	position: relative;
+}
+
+#video-container {
 	position: absolute;
-	top: 0px;
-	left: 0px;
+}
+
+#video-container {
+	top:0%;
+	left: 0%;
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+}
+video {
+	position: absolute;
+	z-index:-100;
+}
+video.fillWidth {
+	width: 100%;
+}
+/*#videobcg {
+	position: absolute;
 	min-width: 100%;
 	min-height: 100%;
 	width: auto;
 	height: auto;
 	z-index: -1000;
 	overflow: hidden;
-}
 
-.videoContainer {
+}*/
+/*.videoContainer {
 	height: 100%;
 	width: 100%;
 	overflow: hidden;
 }
-
+*/
 /*.videoContainer video {
 	min-width: 100%;
 	min-height: 100%;
