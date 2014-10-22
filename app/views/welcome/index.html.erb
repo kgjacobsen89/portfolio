@@ -13,11 +13,16 @@
         <div class="carousel-inner">
             <div class="item active">
                 <!-- Set the first background image using inline CSS below. -->
-                <div class="fill" style="background-image:url('/assets/pyramids.jpg');"></div>
+                <div class="fill" style="background-image:url('/assets/pyramids.jpg');">
+                    <img id="camel" src="/assets/camel.png"/>
+                </div>
             </div>
             <div class="item">
                 <!-- Set the second background image using inline CSS below. -->
-                <div class="fill" style="background-image:url('/assets/Japan.jpg');"></div>
+                <div class="fill" style="background-image:url('/assets/Japan.jpg');">
+                    <div class="fill flowers">
+                    </div>
+                </div>
             </div>
             <div class="item">
                 <!-- Set the third background image using inline CSS below. -->
@@ -25,7 +30,10 @@
             </div>
             <div class="item">
                 <!-- Set the third background image using inline CSS below. -->
-                <div class="fill" style="background-image:url('/assets/paris.jpg');"></div>
+                <div class="fill" style="background-image:url('/assets/paris2.jpg');">
+                    <img id="balloon" src="/assets/balloon.png">
+                    <img id="balloon2" src="/assets/balloon2.png">
+                </div>
             </div>
         </div>
 
@@ -251,8 +259,53 @@
 
 <!-- Script to Activate the Carousel -->
 <script>
+
 $('.carousel').carousel({
     interval: 4000 //changes the speed
-})
+});
+ // <!-- End Carousel -->
+
+$('#camel').animate({"margin-right": "+=1000px"}, 50000);
+
+intervalDown = setInterval(function() {
+    $('#camel').animate({ "margin-right": "+=1000px"}, 50000);
+}, 100000);
+
+setTimeout(function() {
+   $('#camel').animate({ "margin-right": "-=1000px" }, 50000);
+   intervalUp = setInterval(function() {
+      $('#camel').animate({ "margin-right": "-=1000px" }, 50000);
+   }, 100000);
+}, 50000);
+
+// Ballon Animation
+
+$('#balloon').animate({"margin-top": "+=250px"}, 25000);
+
+intervalDown = setInterval(function() {
+    $('#balloon').animate({ "margin-top": "+=250px"}, 25000);
+}, 50000);
+
+setTimeout(function() {
+   $('#balloon').animate({ "margin-top": "-=250px" }, 25000);
+   intervalUp = setInterval(function() {
+      $('#balloon').animate({ "margin-top": "-=250px" }, 25000);
+   }, 50000);
+}, 25000);
+
+//Balloon2 Animation
+
+$('#balloon2').animate({"margin-left": "+=150px"}, 25000);
+
+intervalDown = setInterval(function() {
+    $('#balloon2').animate({ "margin-left": "+=150px"}, 25000);
+}, 50000);
+
+setTimeout(function() {
+   $('#balloon2').animate({ "margin-left": "-=150px" }, 25000);
+   intervalUp = setInterval(function() {
+      $('#balloon2').animate({ "margin-left": "-=150px" }, 25000);
+   }, 50000);
+}, 25000);
 </script>
 
