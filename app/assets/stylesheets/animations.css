@@ -1,0 +1,41 @@
+.full {
+		height:100%;
+		width: 100%;
+    background: no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    -webkit-animation: lens 100s;
+    animation: lens 100s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count:infinite;
+}
+
+@keyframes lens {
+	0% {background-image: url('camera2.png');}
+	10% {background-image: url('camera3.png');}
+	20% {background-image: url('camera2.png');}
+	30% {background-image: url('camera3.png');}
+	40% {background-image: url('camera2.png');}
+	50% {background-image: url('camera3.png');}
+	60% {background-image: url('camera2.png');}
+	70% {background-image: url('camera3.png');}
+	80% {background-image: url('camera2.png');}
+	90% {background-image: url('camera3.png');}
+	100% {background-image: url('camera2.png');}
+}
+
+@-webkit-keyframes lens {
+	0% {background-image: url('camera2.png');}
+	10% {background-image: url('camera3.png');}
+	20% {background-image: url('camera2.png');}
+	30% {background-image: url('camera3.png');}
+	40% {background-image: url('camera2.png');}
+	50% {background-image: url('camera3.png');}
+	60% {background-image: url('camera2.png');}
+	70% {background-image: url('camera3.png');}
+	80% {background-image: url('camera2.png');}
+	90% {background-image: url('camera3.png');}
+	100% {background-image: url('camera2.png');}
+}
